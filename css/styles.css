@@ -1,0 +1,27 @@
+:root {
+  --primary-light-blue: #2B7FFF;
+  --primary-dark-blue: #011C44;
+  --secondary-dark-grey: #4A4A4A;
+  --secondary-light-grey: #747272;
+  --secondary-dark-blue: #011F4A;
+  --secondary-yellow: #FFD02B;
+}
+
+/* base */
+a {
+  text-decoration: none;
+  color: var(--primary-dark-blue);
+  font-style: normal;
+}
+
+body {
+  color: var(--primary-dark-blue);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 32px;
+}
