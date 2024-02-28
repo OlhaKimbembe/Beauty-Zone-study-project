@@ -41,6 +41,10 @@
 }
 
 /* base */
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-dark-blue);
@@ -50,38 +54,54 @@ a {
 body {
   color: var(--primary-dark-blue);
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
 }
 
-h2 {
-  font-size: 32px;
-  font-family: "Play";
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 140px;
-  font-family: "Play";
-  color: var(--primary-light-blue);
-  line-height: 0.8;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 .accent {
   color: var(--primary-light-blue);
 }
 
+.section-title {
+  font-size: 64px;
+  font-family: "Play";
+  line-height: 1.2;
+  margin-bottom: 48px;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* button */
 .button {
-  width: 219px;
-  height: 53px;
   background-color: var(--primary-light-blue);
   border: none;
   border-radius: 32px;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 14px;
+  padding: 16px 32px;
   color: var(--primary-white);
   cursor: pointer;
 }
@@ -104,17 +124,39 @@ h1 {
 }
 
 /* hero section */
+.hero-section {
+  padding: 122px 0 126px 0;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  font-size: 140px;
+  font-family: "Play";
+  color: var(--primary-light-blue);
+  line-height: 0.8;
+}
+
 .hero-text-one {
   font-size: 18px;
   line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .hero-text-two {
   font-size: 12px;
+  margin-bottom: 0;
   line-height: 1.5;
 }
 
 /* about-us-section */
+.about-us-section {
+  padding: 0 0 176px 0;
+}
+
+.about-us-title {
+  margin-bottom: 40px;
+}
+
 .about-us-text {
   font-size: 22px;
   line-height: 1.7;
@@ -125,6 +167,10 @@ h1 {
 }
 
 /* why-we-section */
+.why-we-section {
+  padding-top: 0;
+}
+
 .why-we-text {
   font-size: 18px;
   line-height: 1.3;
