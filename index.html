@@ -9,43 +9,42 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <ul>
-            <li>
-              <a href="/">
-                <img src="images/logo.svg" alt="логотип" />
-              </a>
-            </li>
-            <li>
-              <a href="#about-us-section" class="header-nav-link">Про нас</a>
-            </li>
-            <li>
-              <a href="#why-we-section" class="header-nav-link">Чому ми</a>
-            </li>
-            <li>
-              <a href="#procedures-section" class="header-nav-link"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a href="#contacts-section" class="header-nav-link">Контакти</a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- phone icon -->
-                <img src="" alt="" />
-              </a>
-            </li>
+        <nav class="header-flex">
+          <div class="logo-links">
+            <a href="/">
+              <img src="images/logo.svg" alt="логотип" />
+            </a>
+            <ul class="header-links">
+              <li>
+                <a href="#about-us-section" class="header-nav-link">Про нас</a>
+              </li>
+              <li>
+                <a href="#why-we-section" class="header-nav-link">Чому ми</a>
+              </li>
+              <li>
+                <a href="#procedures-section" class="header-nav-link"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a href="#contacts-section" class="header-nav-link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="icons">
             <li>
               <a href="#">
-                <!-- facebook icon -->
-                <img src="" alt="" />
+                <img src="images/telephone.svg" alt="іконка телефону" />
               </a>
             </li>
             <li>
               <a href="#">
-                <!-- insta icon -->
-                <img src="" alt="" />
+                <img src="images/facebook-f.svg" alt="іконка фейсбуку" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/insta.svg" alt="іконка інстаграму" />
               </a>
             </li>
           </ul>
@@ -68,48 +67,78 @@
       </section>
       <section class="about-us-section section" id="about-us-section">
         <div class="container">
-          <h2 class="about-us-title section-title">
-            Перевтілюйтесь в <span class="accent">Beauty Zone</span>
-          </h2>
-          <p class="about-us-text">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="about-us-text">
-            B <span class="about-us-accent">Beauty Zone</span> ми гарантуємо
-            найвищі стандарти якості та приємний сервіс. Наші косметологічні
-            процедури та препарати допоможуть вам підтримувати свою красу та
-            молодість. З нами краса назавжди!
-          </p>
+          <div class="about-us-flex">
+            <div class="about-us-left-content">
+              <h2 class="about-us-title section-title">
+                Перевтілюйтесь в <span class="accent">Beauty Zone</span>
+              </h2>
+              <p class="about-us-text">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about-us-text">
+                B <span class="about-us-accent">Beauty Zone</span> ми гарантуємо
+                найвищі стандарти якості та приємний сервіс. Наші косметологічні
+                процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. З нами краса назавжди!
+              </p>
+            </div>
+            <div class="about-us-photos-right">
+              <div class="photo">
+                <img
+                  src="images/before-woman-face.png"
+                  alt="обличчя жінки до процедури"
+                />
+              </div>
+              <div class="photo after">
+                <img
+                  src="images/after-woman-face.png"
+                  alt="обличчя жінки після процедури"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="why-we-section section" id="why-we-section">
-        <div class="container">
-          <h2 class="section-title">
+        <div class="container why-we">
+          <h2 class="section-title why-we-title">
             Чому люди <span class="accent">обирають нас</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <img src="" alt="" />
+          <ul class="why-we-list">
+            <li class="why-we-items">
+              <article class="why-we-card">
+                <img
+                  class="why-we-icon"
+                  src="images/materials-science.svg"
+                  alt="іконка матеріалознавство"
+                />
                 <p class="why-we-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
               </article>
             </li>
-            <li>
-              <article>
-                <img src="" alt="" />
+            <li class="why-we-items">
+              <article class="why-we-card">
+                <img
+                  class="why-we-icon"
+                  src="images/cosmetic_bottles.svg"
+                  alt="іконка з косметичними засобами"
+                />
                 <p class="why-we-text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
               </article>
             </li>
-            <li>
-              <article>
-                <img src="" alt="" />
+            <li class="why-we-items">
+              <article class="why-we-card">
+                <img
+                  class="why-we-icon"
+                  src="images/crown.svg"
+                  alt="іконка корони"
+                />
                 <p class="why-we-text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
