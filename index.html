@@ -31,20 +31,26 @@
               </li>
             </ul>
           </div>
-          <ul class="icons">
+          <ul class="icons-header">
             <li>
               <a href="#">
-                <img src="images/telephone.svg" alt="іконка телефону" />
+                <svg class="icon-header">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/facebook-f.svg" alt="іконка фейсбуку" />
+                <svg class="icon-header">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/insta.svg" alt="іконка інстаграму" />
+                <svg class="icon-header">
+                  <use href="./images/icons.svg#insta"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -150,20 +156,55 @@
       </section>
       <section class="section" id="procedures-section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title procedures">
             Наші <span class="accent">процедури</span>
           </h2>
-          <ul>
-            <li>
-              <article></article>
-            </li>
-            <li>
-              <article></article>
-            </li>
-            <li>
-              <article></article>
-            </li>
-          </ul>
+          <div class="procedures-scroll-container">
+            <button class="carousel-button" type="button">
+              <svg width="16">
+                <use href="./images/icons.svg#Arrow"></use>
+              </svg>
+            </button>
+            <ul class="procedures-list">
+              <li>
+                <article class="procedures-card">
+                  <h3 class="procedures-card-title">Маски <br />для обличчя</h3>
+                  <img
+                    src="images/Mask-face.png"
+                    alt="обличчя дівчини, якій наносять маску"
+                  />
+                </article>
+              </li>
+              <li>
+                <article class="procedures-card">
+                  <h3 class="procedures-card-title">
+                    Ін'єкції <br />для обличчя
+                  </h3>
+                  <img
+                    src="images/injections-face.png"
+                    alt="обличчя дівчини, якій роблять ін'єкції"
+                  />
+                </article>
+              </li>
+              <li>
+                <article class="procedures-card">
+                  <h3 class="procedures-card-title">
+                    Очищення <br />
+                    обличчя
+                  </h3>
+                  <img
+                    src="images/clearing-face.png"
+                    alt="обличчя дівчини, якій роблять чистку обличчя"
+                  />
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16">
+                <use href="./images/icons.svg#Arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="section" id="contacts-section">
@@ -179,69 +220,82 @@
     </main>
     <footer class="footer-section">
       <div class="container">
-        <a href="/">
-          <img src="images/logo.svg" alt="логотип" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a class="footer-nav-link" href="#about-us-section">Про нас</a>
-            </li>
-            <li>
-              <a class="footer-nav-link" href="#why-we-section">Чому ми</a>
-            </li>
-            <li>
-              <a class="footer-nav-link" href="#procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a class="footer-nav-link" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="footer-address-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="footer-address-link" href="mailto:beautyzone@gmail.com"
-                >beautyzone@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer-address-link"
-                target="_blank"
-                href="https://maps.app.goo.gl/f811BqN5avzwZWxQ8"
-                >Україна, м. Київ, вул. Тараса Шевченка 5</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <!-- phone -->
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- facebook -->
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- insta -->
-                <img src="" alt="" />
-              </a>
-            </li>
-          </ul>
-        </address>
-        <a class="footer-address-link" href="#">Політика конфіденційності</a>
-        <p class="security">&copy; Дані захищені</p>
+        <div class="footer-flex">
+          <a href="/">
+            <img src="images/logo.svg" alt="логотип" />
+          </a>
+          <nav>
+            <ul class="footer-column-gap">
+              <li>
+                <a class="footer-nav-link" href="#about-us-section">Про нас</a>
+              </li>
+              <li>
+                <a class="footer-nav-link" href="#why-we-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="footer-nav-link" href="#procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="footer-nav-link" href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="footer-column-gap">
+              <li>
+                <a class="footer-address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-address-link"
+                  href="mailto:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-address-link"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/f811BqN5avzwZWxQ8"
+                  >Україна, м. Київ, <br />вул. Тараса Шевченка 5</a
+                >
+              </li>
+            </ul>
+            <ul class="icons-footer">
+              <li>
+                <a href="#">
+                  <svg width="42" height="42" class="icon-footer">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="42" height="42" class="icon-footer">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="42" height="42" class="icon-footer">
+                    <use href="./images/icons.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div class="security-copyrights footer-column-gap">
+            <a class="footer-address-link" href="#"
+              >Політика конфіденційності</a
+            >
+            <p class="security">&copy; Дані захищені</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

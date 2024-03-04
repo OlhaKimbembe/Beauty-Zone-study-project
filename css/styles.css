@@ -99,7 +99,7 @@ p {
 /* button */
 .button {
   background-color: var(--primary-light-blue);
-  border: none;
+  border: 2px solid var(--primary-light-blue);
   border-radius: 32px;
   font-size: 18px;
   font-weight: 700;
@@ -107,6 +107,7 @@ p {
   padding: 16px 32px;
   color: var(--primary-white);
   cursor: pointer;
+
 }
 
 .button:hover {
@@ -123,7 +124,7 @@ p {
 
 .header-nav-link:hover {
   color: var(--primary-light-blue);
-  font-weight: 700;
+
 }
 
 .header-flex {
@@ -145,9 +146,19 @@ p {
   gap: 56px;
 }
 
-.icons {
+.icons-header {
   display: flex;
   gap: 32px;
+}
+
+.icon-header {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary-dark-blue);
+}
+
+.icon-header:hover {
+  fill: var(--primary-light-blue);
 }
 
 /* hero section */
@@ -268,16 +279,85 @@ p {
   margin-bottom: 12px;
 }
 
+/* procedures */
+.section-title.procedures {
+  max-width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.procedures-scroll-container {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  width: 100%;
+  gap: 32px;
+}
+
+.procedures-list {
+  display: flex;
+  gap: 16px;
+}
+
+.procedures-card {
+  border-radius: 120px 4px 120px 4px;
+  position: relative;
+}
+
+.procedures-card-title {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary-white);
+  position: absolute;
+  bottom: 32px;
+  right: 104px;
+}
+
+/* carousel */
+
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  background-color: transparent;
+  fill: var(--primary-dark-blue);
+  border: 1px solid var(--primary-dark-blue);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  fill: var(--primary-white);
+  border: 1px solid var(--primary-white);
+  background-color: var(--primary-light-blue);
+}
 
 /* footer */
 .footer-section {
   background-color: var(--primary-dark-blue);
 }
 
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+  gap: 24px;
+}
+
 .footer-nav-link {
   font-size: 16px;
   line-height: 1.2;
   color: var(--primary-white);
+}
+
+.footer-column-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer-address-link {
@@ -290,4 +370,14 @@ p {
   font-size: 13px;
   line-height: 1.2;
   color: var(--secondary-light-grey);
+}
+
+.icons-footer {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.icon-footer {
+  fill: var(--primary-white);
 }
