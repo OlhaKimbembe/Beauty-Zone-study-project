@@ -7,7 +7,7 @@
     <title>Beauty Zone</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="header-flex">
           <div class="logo-links">
@@ -90,15 +90,20 @@
               </p>
             </div>
             <div class="about-us-photos-right">
+              <img class="star_one" src="images/Star_one.svg" alt="зірка" />
+              <img class="star_two" src="images/Star_two.svg" alt="зірка" />
+              <img class="star_three" src="images/Star_three.svg" alt="зірка" />
               <div class="photo">
                 <img
-                  src="images/before-woman-face.png"
+                  class="photo_frame"
+                  src="images/before-woman-face.jpg"
                   alt="обличчя жінки до процедури"
                 />
               </div>
               <div class="photo after">
                 <img
-                  src="images/after-woman-face.png"
+                  class="photo_frame"
+                  src="images/after-woman-face.jpg"
                   alt="обличчя жінки після процедури"
                 />
               </div>
@@ -209,12 +214,24 @@
       </section>
       <section class="section" id="contacts-section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title contacts-title">
             Як нас <span class="accent">знайти</span>
           </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sus!4v1708956537838!5m2!1sen!2sus"
-          ></iframe>
+          <div class="contacts-container">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sus!4v1708956537838!5m2!1sen!2sus"
+            ></iframe>
+            <div class="contacts-form">
+              <h3 class="contacts-form-title">
+                Запишіться <span class="accent">безкоштовно</span> та отримайте
+                подарунок
+              </h3>
+              <button type="button" class="button contacts-button">
+                Записатись безкоштовно
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -289,11 +306,11 @@
               </li>
             </ul>
           </address>
-          <div class="security-copyrights footer-column-gap">
+          <div class="privacy-copyrights footer-column-gap">
             <a class="footer-address-link" href="#"
               >Політика конфіденційності</a
             >
-            <p class="security">&copy; Дані захищені</p>
+            <p class="data-protected">&copy; Дані захищені</p>
           </div>
         </div>
       </div>
