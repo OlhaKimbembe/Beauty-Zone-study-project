@@ -1,0 +1,30 @@
+.contacts-section {
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    margin: 0 90px;
+  }
+
+  &__map {
+    width: 100%;
+    height: 481px;
+    border-radius: 32px;
+    border: none;
+  }
+
+  &__form-box {
+    background: no-repeat url(../images/contacts-back.png);
+    background-size: cover;
+    background-color: var(--primary-dark-blue);
+    border-radius: 32px;
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+  }
+}

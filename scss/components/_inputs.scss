@@ -1,0 +1,22 @@
+.input {
+
+  &__window {
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--secondary-light-grey);
+    color: var(--primary-white);
+    padding: 16px 32px;
+    width: 310px;
+
+    &::placeholder {
+      font-size: 13px;
+      color: var(--primary-white);
+    }
+
+    &:focus {
+      outline: none;
+      background-color: var(--secondary-light-grey);
+    }
+  }
+
+}

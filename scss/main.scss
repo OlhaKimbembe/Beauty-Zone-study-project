@@ -1,0 +1,24 @@
+// components
+@import './components/_buttons.scss';
+@import './components/container';
+@import './components/form-box';
+@import './components/inputs';
+@import './components/logo';
+@import './components/procedures-card';
+@import './components/_section.scss';
+
+// layouts
+@import './layouts/about_us_section';
+@import './layouts/contacts-section';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/modal';
+@import './layouts/procedures-section';
+@import './layouts/why-we-section';
+
+// utils
+@import './utils/_fonts.scss';
+@import './utils/_utils.scss';
+@import './utils/_variables.scss';
+@import './_base.scss';

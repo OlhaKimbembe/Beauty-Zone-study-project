@@ -1,0 +1,33 @@
+.hero-section {
+  padding: 122px 0 126px 0;
+  background-image: url(../images/hero-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    padding-left: 106px;
+  }
+
+  &__text-one {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 140px;
+    font-family: "Play";
+    color: var(--primary-light-blue);
+    line-height: 0.8;
+  }
+
+  &__text-two {
+    font-size: 12px;
+    max-width: 220px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
