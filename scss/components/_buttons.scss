@@ -51,19 +51,4 @@
 }
 
 
-.close-btn {
-  position: absolute;
-  top: 42px;
-  right: 42px;
-  background-color: transparent;
-  fill: var(--primary-white);
-  border: none;
-  cursor: pointer;
-  transition: transform .3s;
-
-  &:focus {
-    transform: scale(0.9);
-  }
-}
-
 

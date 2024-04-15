@@ -1,0 +1,45 @@
+.mobile-menu {
+  padding: 16px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-white);
+  transform: translateX(100%);
+  transition: transform .3s;
+  z-index: 2;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+    align-items: flex-start;
+  }
+
+  &__nav-link:hover {
+    color: var(--primary-light-blue);
+    font-weight: 600;
+  }
+
+  &__icons-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    gap: 16px;
+  }
+}

@@ -28,7 +28,7 @@
   background: no-repeat url(../images/modal_back.png);
   background-size: cover;
   background-color: var(--primary-dark-blue);
-  padding: 42px 144px;
+  padding: 36px 24px;
   border-radius: 48px;
   width: 100%;
   max-width: 723px;
@@ -38,13 +38,48 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
 
+  &__close-btn {
+    position: absolute;
+    top: 36px;
+    right: 24px;
+    background-color: transparent;
+    fill: var(--primary-white);
+    border: none;
+    cursor: pointer;
+    transition: transform .3s;
+
+    &:focus {
+      transform: scale(0.9);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 42px;
+      right: 42px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    @media screen and (min-width: $bp-tablet) {
+      width: auto;
+      }
+  }
+
   &__title {
     color: var(--primary-white);
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__form-title {
@@ -52,7 +87,11 @@
   }
 
   &__input {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
   }
 
 }

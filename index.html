@@ -56,10 +56,71 @@
               </a>
             </li>
           </ul>
-          <svg width="24" height="24" class="header__burger-menu">
+          <svg width="24" height="24" class="header__burger-menu menu-btn-open">
             <use href="./images/icons.svg#burger-menu"></use>
           </svg>
         </nav>
+        <div class="mobile-menu">
+          <button type="button" class="mobile-menu__btn menu-btn-close">
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#close_btn"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <a href="./index.html">
+              <img
+                class="mobile-menu__logo logo"
+                src="./images/logo.svg"
+                alt="логотип сучасної пекарні"
+              />
+            </a>
+            <ul class="mobile-menu__menu">
+              <li>
+                <a href="#about-us-section" class="mobile-menu__nav-link"
+                  >Про нас</a
+                >
+              </li>
+              <li>
+                <a href="#why-we-section" class="mobile-menu__nav-link"
+                  >Чому ми</a
+                >
+              </li>
+              <li>
+                <a href="#procedures-section" class="mobile-menu__nav-link"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a href="#contacts-section" class="mobile-menu__nav-link"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__icons-box">
+              <li>
+                <a href="#">
+                  <svg class="mobile-menu__icon" width="32" height="32">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="mobile-menu__icon" width="32" height="32">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="mobile-menu__icon" width="32" height="32">
+                    <use href="./images/icons.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -498,7 +559,7 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal form-box">
-        <button type="button" class="close-btn modal-btn-close">
+        <button type="button" class="modal__close-btn modal-btn-close">
           <svg width="16" height="16">
             <use href="./images/icons.svg#close_btn"></use>
           </svg>
@@ -563,6 +624,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/procedures-slider.js"></script>
   </body>
