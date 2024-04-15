@@ -1,9 +1,17 @@
+// utils
+@import './utils/animation';
+@import './utils/_variables.scss';
+@import './utils/_fonts.scss';
+@import './utils/_utils.scss';
+@import './_base.scss';
+
 // components
 @import './components/_buttons.scss';
 @import './components/container';
 @import './components/form-box';
 @import './components/inputs';
 @import './components/logo';
+@import './components/pagination';
 @import './components/procedures-card';
 @import './components/_section.scss';
 
@@ -16,9 +24,3 @@
 @import './layouts/modal';
 @import './layouts/procedures-section';
 @import './layouts/why-we-section';
-
-// utils
-@import './utils/_fonts.scss';
-@import './utils/_utils.scss';
-@import './utils/_variables.scss';
-@import './_base.scss';

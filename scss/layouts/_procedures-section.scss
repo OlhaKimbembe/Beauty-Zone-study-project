@@ -8,16 +8,18 @@
     gap: 32px;
   }
 
-  &__list {
-    display: flex;
+  &__swiper-container {
     width: 100%;
-    gap: 16px;
-    flex-wrap: wrap;
+    overflow: hidden;
   }
 
-  &__item {
-    flex-basis: calc((100% - 32px) / 3);
-  }
+    &__btn {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
 }
 
 

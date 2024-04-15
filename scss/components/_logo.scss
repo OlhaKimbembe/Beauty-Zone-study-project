@@ -1,7 +1,12 @@
 .logo {
   transition: transform .3s;
-}
+  width: 57px;
 
-.logo:hover {
-  transform: scale(1.03);
+  @media screen and (min-width: $bp-tablet) {
+    width: 74px;
+  }
+
+    &:hover {
+      transform: scale(1.03);
+    }
 }

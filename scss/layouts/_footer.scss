@@ -5,11 +5,29 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background: no-repeat url(../images/footer-back@2x.png);
+    background-size: cover;
+    background-color: var(--primary-dark-blue);
+  }
+
   &::after {
-    content: url(../images/footer-cosmetic-bottles.png);
+    content: '';
+    background-image: url(../images/footer-cosmetic-bottles.png);
+    background-size: 100% 100%;
+    width: 247px;
+    height: 152px;
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     right: 0;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/footer-cosmetic-bottles@2x.png);
+    }
   }
 
   &__flex-container {
@@ -41,6 +59,7 @@
     display: flex;
     gap: 24px;
     margin-top: 16px;
+    align-items: center;
   }
 
   &__icon {

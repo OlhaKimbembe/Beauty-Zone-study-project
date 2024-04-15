@@ -1,30 +1,38 @@
 .header {
   position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
+
+  @media screen and (min-width: $bp-tablet) {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+  }
 
   &__nav-flex {
     display: flex;
     align-items: center;
-    padding: 32px 0;
-  }
+    padding: 16px 0;
+    justify-content: space-between;
+    gap: 24px;
 
-  &__logo-links {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 32px 0;
+    }
   }
 
   &__links-box {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    gap: 56px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      gap: 56px;
+    }
   }
 
   &__nav-link {
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
     line-height: 1.2;
     transition: color .3s, transform .3s;
 
@@ -32,22 +40,43 @@
       color: var(--primary-light-blue);
       transform: scale(1.1);
     }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+    }
   }
 
   &__icons-box {
-    display: flex;
-    gap: 32px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 32px;
+    }
   }
 
   &__icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     fill: var(--primary-dark-blue);
     transition: fill .3s, transform .3s;
 
     &:hover {
       fill: var(--primary-light-blue);
       transform: scale(1.1);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__burger-menu {
+    fill: var(--primary-white);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
     }
   }
 }

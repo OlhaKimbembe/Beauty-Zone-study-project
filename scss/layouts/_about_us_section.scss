@@ -1,52 +1,89 @@
 .about-us-section {
-  padding: 0 0 176px 0;
+  position: relative;
+  padding: 0 0 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    position: static;
+    padding: 0;
+  }
 
   &__flex {
-    display: flex;
-    gap: 28px;
+    display: block;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 28px;
+    }
   }
 
   &__left-content {
-    max-width: 708px;
+
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 708px;
+    }
   }
 
   &__title {
+    margin: 24px 0;
+
+  @media screen and (min-width: $bp-desktop) {
     margin: 40px 0;
+  }
   }
 
   &__text {
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.2;
 
     &--accent {
       font-weight: 700;
     }
+
+    &:first-of-type {
+      margin-bottom: 24px;
+
+      @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+    }
   }
 
   &__photos-right {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    gap: 40px;
-    position: relative;
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      gap: 40px;
+      position: relative;
+    }
   }
 
   &__star_one {
     position: absolute;
     top: 44px;
     right: -10px;
+    animation: pulse 2s ease-in-out infinite;
   }
   
   &__star_two {
     position: absolute;
     top: 347px;
     right: 303px;
+    animation: pulse 2s ease-in-out infinite;
   }
   
   &__star_three {
     position: absolute;
     top: 270px;
     right: 6px;
+    animation: pulse 2s ease-in-out infinite;
   }
 
   &__photo {
@@ -57,6 +94,23 @@
 
     &--align {
       align-self: flex-end;
+    }
+  }
+
+  &__star-small-screen {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -25px;
+    right: 22px;
+    animation: pulse 2s ease-in-out infinite;
+
+    @media screen and (min-width: $bp-tablet) {
+      bottom: -10px;
+    }
+  
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
     }
   }
 }
