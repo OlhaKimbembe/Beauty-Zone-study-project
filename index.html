@@ -329,16 +329,18 @@
           </div>
         </div>
       </section>
-      <!-- <section class="contacts-section section" id="contacts-section">
+      <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <h2 class="section__title section__title--centred">
             Як нас <span class="section__title--accent">знайти</span>
           </h2>
           <div class="contacts-section__container">
-            <iframe
-              class="contacts-section__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sus!4v1708956537838!5m2!1sen!2sus"
-            ></iframe>
+            <div class="contacts-section__map-box">
+              <iframe
+                class="contacts-section__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sus!4v1708956537838!5m2!1sen!2sus"
+              ></iframe>
+            </div>
             <div class="contacts-section__form-box form-box">
               <h3 class="form-box__title">
                 Запишіться
@@ -402,13 +404,17 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container">
         <div class="footer-section__flex-container">
           <a href="/">
-            <img class="logo" src="images/logo.svg" alt="логотип" />
+            <img
+              class="footer-section__logo logo"
+              src="images/logo.svg"
+              alt="логотип"
+            />
           </a>
           <nav>
             <ul class="footer-section__list">
@@ -428,12 +434,14 @@
                 >
               </li>
               <li>
-                <a class="footer-nav-link" href="#contacts-section">Контакти</a>
+                <a class="footer-section__nav-link" href="#contacts-section"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </nav>
           <address>
-            <ul class="footer-section__list">
+            <ul class="footer-section__list footer-section__address">
               <li>
                 <a class="footer-section__address-link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
@@ -487,7 +495,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
       <div class="modal form-box">
         <button type="button" class="close-btn modal-btn-close">
