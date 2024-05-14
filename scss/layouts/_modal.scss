@@ -75,7 +75,7 @@
 
   &__title {
     color: var(--primary-white);
-    margin-bottom: 24px;
+    margin: 24px 0 24px;
 
     @media screen and (min-width: $bp-tablet) {
       margin-bottom: 40px;
